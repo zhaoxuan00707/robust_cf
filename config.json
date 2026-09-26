@@ -1,0 +1,58 @@
+{
+  "seed": 0,
+  "max_factuals": 128,
+  "split": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "training": {
+    "hidden": [
+      64,
+      32
+    ],
+    "epochs": 40,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "update": {
+    "steps": 10,
+    "lr": 0.01
+  },
+  "r_ratios": [
+    0,
+    0.25,
+    1,
+    3
+  ],
+  "beta_grid": [
+    1.05,
+    1.1,
+    1.2
+  ],
+  "solver": {
+    "steps": 800,
+    "primal_lr": 1.0,
+    "rho": 1.0,
+    "obj_tol": 1e-06,
+    "feas_tol": 1e-05
+  },
+  "smooth_temperature": 0.05,
+  "categorical_temperature": 1.0,
+  "categorical_smoothing": 0.0001,
+  "future": {
+    "families": [
+      "mean",
+      "scale",
+      "tail"
+    ],
+    "severities": [
+      0.5,
+      1,
+      2.5
+    ],
+    "realizations": 5,
+    "cal_seed": 100000,
+    "test_seed": 200000
+  }
+}
