@@ -1,4 +1,4 @@
-# GRACE with Wachter Base counterfactuals
+# GRACE with Base counterfactuals
 
 Standalone tabular implementation extracted from the verified Task100 experiments.
 This repository contains only Wachter Base generation, update-aware GRACE,
